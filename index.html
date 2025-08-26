@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Lumen — a minimal productivity dashboard that keeps your focus on work. No ads, private by design, and simple to use.">
+    <meta property="og:title" content="Lumen — Clarity for your day">
+    <meta property="og:description" content="A minimal productivity dashboard that keeps your focus where it belongs — on work, not noise.">
+    <meta property="og:image" content="/assets/og.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Lumen — Clarity for your day</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container header__inner">
+        <a class="brand" href="#">Lumen</a>
+
+        <nav class="site-nav" aria-label="Primary" id="site-nav">
+          <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <ul class="nav__list" id="primary-menu" data-visible="false">
+            <li><a class="nav__link" href="#features">Features</a></li>
+            <li><a class="nav__link" href="#highlights">Highlights</a></li>
+            <li><a class="nav__link" href="#pricing">Pricing</a></li>
+            <li><a class="nav__link" href="#testimonials">Testimonials</a></li>
+            <li><a class="nav__link" href="#faq">FAQ</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+            <li class="nav__cta"><a class="btn btn--primary" href="#contact">Start your free trial</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">Clarity for your day.</h1>
+            <p class="hero__lead">A minimal productivity dashboard that keeps your focus where it belongs — on work, not noise.</p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#pricing">Start your free trial</a>
+              <a class="btn btn--ghost" href="#highlights">See how it works</a>
+            </div>
+
+            <p class="hero__trust muted">No ads · Private by design · Cancel anytime</p>
+          </div>
+
+          <div class="hero__media">
+            <img src="/assets/device.svg" alt="Lumen app mockup" class="device" width="420" height="300" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="section" id="features">
+        <div class="container">
+          <h2 class="section__title">Core features</h2>
+          <div class="grid grid--4">
+            <article class="card feature reveal" aria-labelledby="f1">
+              <div class="feature__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+              </div>
+              <h3 id="f1">Simple Dashboard</h3>
+              <p class="muted">See tasks, time, and priorities at a glance.</p>
+            </article>
+
+            <article class="card feature reveal" aria-labelledby="f2">
+              <div class="feature__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M4 12h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <h3 id="f2">Distraction-Free</h3>
+              <p class="muted">Focus modes and calm notifications — nothing extra.</p>
+            </article>
+
+            <article class="card feature reveal" aria-labelledby="f3">
+              <div class="feature__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+              </div>
+              <h3 id="f3">Fast Insights</h3>
+              <p class="muted">Lightweight metrics that help you iterate daily.</p>
+            </article>
+
+            <article class="card feature reveal" aria-labelledby="f4">
+              <div class="feature__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <h3 id="f4">Integrations</h3>
+              <p class="muted">Sync with Calendar, Todo, and Notes tools.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HIGHLIGHTS -->
+      <section class="section" id="highlights">
+        <div class="container grid grid--2 align-center">
+          <div class="reveal">
+            <h2 class="section__title">Minimal by default</h2>
+            <p class="muted">Every pixel has a job. Lumen focuses on what matters: getting work done without extra interface noise.</p>
+
+            <ul class="simple-list">
+              <li><strong>Keyboard-first</strong> — faster flows for power users.</li>
+              <li><strong>Local-first options</strong> — work without connectivity.</li>
+              <li><strong>Private analytics</strong> — learn without being tracked.</li>
+            </ul>
+          </div>
+
+          <div class="screenshot-grid reveal">
+            <img src="/assets/device.svg" alt="Screenshot 1" loading="lazy">
+            <img src="/assets/device.svg" alt="Screenshot 2" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section class="section" id="pricing">
+        <div class="container">
+          <div class="stack-lg">
+            <h2 class="section__title">Pricing</h2>
+            <div class="billing-toggle">
+              <span class="muted">Monthly</span>
+              <label class="switch" for="billing-toggle">
+                <input id="billing-toggle" type="checkbox" aria-label="Toggle yearly pricing">
+                <span class="switch__track" aria-hidden="true"></span>
+              </label>
+              <span class="muted">Yearly <small class="muted">(−15%)</small></span>
+            </div>
+          </div>
+
+          <div class="grid grid--3">
+            <div class="card pricing reveal">
+              <h3>Free</h3>
+              <p class="price"><span class="price-amount">$0</span><span class="muted"> /month</span></p>
+              <ul class="checklist muted">
+                <li>Single user</li>
+                <li>Basic focus mode</li>
+                <li>Local storage</li>
+              </ul>
+              <a class="btn btn--ghost" href="#contact">Get started</a>
+            </div>
+
+            <div class="card pricing pricing--highlight reveal">
+              <h3>Pro</h3>
+              <p class="price"><span class="price-amount" data-month="6" data-year="51">$6</span><span class="muted"> /month</span></p>
+              <ul class="checklist muted">
+                <li>All focus modes</li>
+                <li>Integrations</li>
+                <li>Priority support</li>
+              </ul>
+              <a class="btn btn--primary" href="#contact">Start free trial</a>
+            </div>
+
+            <div class="card pricing reveal">
+              <h3>Team</h3>
+              <p class="price"><span class="price-amount" data-month="12" data-year="102">$12</span><span class="muted"> /user · month</span></p>
+              <ul class="checklist muted">
+                <li>Shared spaces</li>
+                <li>Role permissions</li>
+                <li>Admin tools</li>
+              </ul>
+              <a class="btn btn--ghost" href="#contact">Contact sales</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <h2 class="section__title">What customers say</h2>
+          <div class="grid grid--3">
+            <figure class="card testimonial reveal">
+              <img src="/assets/avatar.svg" alt="Ava" class="avatar">
+              <blockquote>"Lumen helps us protect time."</blockquote>
+              <figcaption class="muted">Ava R., PM</figcaption>
+            </figure>
+
+            <figure class="card testimonial reveal">
+              <img src="/assets/avatar.svg" alt="Kenji" class="avatar">
+              <blockquote>"My dashboard finally got out of the way."</blockquote>
+              <figcaption class="muted">Kenji T., Designer</figcaption>
+            </figure>
+
+            <figure class="card testimonial reveal">
+              <img src="/assets/avatar.svg" alt="Sofia" class="avatar">
+              <blockquote>"We shipped more with less stress."</blockquote>
+              <figcaption class="muted">Sofia M., Eng Lead</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="container">
+          <h2 class="section__title">Frequently asked</h2>
+          <div class="faq" role="list">
+            <div class="faq__item">
+              <button class="faq__toggle" aria-expanded="false" aria-controls="faq1">Is there a free plan?</button>
+              <div id="faq1" class="faq__panel" hidden>Yes. Start free, upgrade any time.</div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__toggle" aria-expanded="false" aria-controls="faq2">Do you store my data?</button>
+              <div id="faq2" class="faq__panel" hidden>We use privacy-first telemetry. You can turn it off entirely.</div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__toggle" aria-expanded="false" aria-controls="faq3">Does it work offline?</button>
+              <div id="faq3" class="faq__panel" hidden>Core features work offline; cloud sync resumes automatically.</div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__toggle" aria-expanded="false" aria-controls="faq4">Can I cancel?</button>
+              <div id="faq4" class="faq__panel" hidden>Anytime, with one click from your account settings.</div>
+            </div>
+
+            <div class="faq__item">
+              <button class="faq__toggle" aria-expanded="false" aria-controls="faq5">How private is my data?</button>
+              <div id="faq5" class="faq__panel" hidden>We never sell data. Private analytics run locally unless you opt in.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <h2 class="section__title">Contact</h2>
+
+          <div class="contact-card">
+            <form id="contact-form" class="contact-card__form" action="#" method="post" novalidate>
+              <div class="contact-card__header">
+                <h3>Get in touch</h3>
+                <p class="muted">Have a question or want a demo? Send a short message and we'll reply within 48 hours.</p>
+              </div>
+
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" class="input" placeholder="Your name" required aria-required="true" aria-describedby="err-name">
+                <div id="err-name" class="field-error" aria-live="assertive"></div>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" class="input" placeholder="you@company.com" required aria-required="true" aria-describedby="err-email">
+                <div id="err-email" class="field-error" aria-live="assertive"></div>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" class="input input--textarea" placeholder="How can we help?" required aria-required="true" aria-describedby="err-message"></textarea>
+                <div id="err-message" class="field-error" aria-live="assertive"></div>
+              </div>
+
+              <div class="field field--consent">
+                <input id="consent" name="consent" type="checkbox" class="checkbox">
+                <label for="consent">You can email me about Lumen news.</label>
+              </div>
+
+              <div class="form-actions">
+                <button id="contact-submit" class="btn btn--primary" type="submit">Send message</button>
+                <div id="form-feedback" role="status" aria-live="polite" class="muted visually-hidden"></div>
+              </div>
+            </form>
+
+            <aside class="contact-card__aside" aria-label="Contact information">
+              <div class="contact-aside__panel card">
+                <h4>Quick contact</h4>
+                <p class="muted">Prefer email? hello@lumen.example</p>
+                <ul class="contact-list muted">
+                  <li><strong>Response time:</strong> ~48 hours</li>
+                  <li><strong>Support:</strong> Priority for Pro users</li>
+                </ul>
+                <img src="/assets/device.svg" alt="App preview" loading="lazy">
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <span class="brand">Lumen</span>
+          <small class="muted">© <span id="year"></span></small>
+        </div>
+
+        <div class="footer__right">
+          <a class="muted" href="#">Privacy</a>
+          <a class="muted" href="#">Terms</a>
+          <a class="muted" href="#">Changelog</a>
+          <div class="lang">English ▾</div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" hidden>↑</button>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
