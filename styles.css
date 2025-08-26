@@ -253,6 +253,29 @@ blockquote{margin:0;font-weight:600}
   .grid--3{grid-template-columns:repeat(2,1fr)}
 }
 
+/* Tablet-specific adjustments (<=1024px) */
+@media (max-width:1024px){
+  .container{padding:0 var(--space-md)}
+
+  /* Slightly reduce hero width and spacing for tablet */
+  .hero__inner{grid-template-columns:1fr 360px;gap:var(--space-lg)}
+  .hero__title{font-size:1.95rem}
+
+  /* Make pricing and feature grids friendlier on tablet */
+  .grid--3{grid-template-columns:repeat(2,1fr);gap:var(--space-md)}
+  .grid--4{grid-template-columns:repeat(2,1fr);gap:var(--space-md)}
+
+  /* Testimonials: reduce avatar size and spacing */
+  .avatar{width:44px;height:44px}
+
+  /* Pricing cards: more breathing room */
+  .pricing{padding:14px}
+
+  /* Contact card: keep aside visible but smaller */
+  .contact-card{grid-template-columns:1fr 300px;gap:var(--space-md)}
+  .contact-card__aside .contact-aside__panel img{max-height:120px;object-fit:cover}
+}
+
 @media (max-width:720px){
   .header__inner{height:64px}
   .nav-toggle{display:block}
