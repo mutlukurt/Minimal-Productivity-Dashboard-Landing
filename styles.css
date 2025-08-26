@@ -313,15 +313,30 @@ blockquote{margin:0;font-weight:600}
 @media (max-width:720px){
   .header__inner{height:64px}
   .nav-toggle{display:block}
-  .nav__list{position:absolute;right:16px;top:64px;background:var(--bg);flex-direction:column;padding:12px;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow-subtle);display:none}
-  .nav__list[data-visible="true"]{display:flex}
 
-  .hero__inner{grid-template-columns:1fr;gap:var(--space-lg)}
+  /* mobile nav: full-width panel for accessibility */
+  .nav__list{position:fixed;left:12px;right:12px;top:64px;background:var(--bg);flex-direction:column;padding:12px;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow-subtle);display:none;z-index:70}
+  .nav__list[data-visible="true"]{display:flex}
+  .nav__list li{padding:10px 6px}
+
+  /* hero stacks vertically and centers content for small screens */
+  .hero__inner{grid-template-columns:1fr;gap:var(--space-lg);align-items:start}
+  .hero__content{order:1}
+  .hero__media{order:2}
+  .hero__title{text-align:left;font-size:1.6rem}
+  .hero__lead{text-align:left}
+  .device{max-width:360px;margin:0 auto}
+
   .grid--2{grid-template-columns:1fr}
   .grid--3{grid-template-columns:1fr}
   .grid--4{grid-template-columns:1fr}
   .container{padding:0 var(--space-md)}
   .form-grid{grid-template-columns:1fr}
+
+  /* contact card collapses cleanly; aside moves below */
+  .contact-card{grid-template-columns:1fr}
+  .contact-card__aside{order:2}
+  .contact-card__aside .contact-aside__panel img{max-width:100%;height:auto}
 }
 
 /* prefers-reduced-motion */
